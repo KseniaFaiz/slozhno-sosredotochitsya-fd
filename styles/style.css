@@ -94,6 +94,7 @@ text-shadow: 0px 0px 7px var(--accent-color);
   justify-items: end;
   width: 70px;
   height: 98px;
+  gap: 11px;
 }
 
 .header__theme-menu-item {
@@ -176,11 +177,11 @@ text-shadow: 0px 0px 7px var(--accent-color);
   display: grid;
   align-items: center;
   padding: 10px;
-  gap: 50px;
+  margin-block-start: 40px;
+  gap:50px;
 }
 .section {
   display: grid;
-  gap: 50px;
 }
 
 .card {
@@ -254,5 +255,5 @@ text-shadow: 0px 0px 7px var(--accent-color);
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #db00ff;
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
