@@ -21,13 +21,9 @@ h1 h2 h3 h4 h5 p {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  /* background-image: url(../images/cover-image-dark.png);
-  background-size: cover; */
   justify-content: start;
-  
   height: 100vh;
   padding: 10px;
-
   position: relative;
 }
 
@@ -50,12 +46,6 @@ h1 h2 h3 h4 h5 p {
   padding-inline-start: 10px;
   text-shadow: 0px 0px 7px var(--accent-color);
 }
-/* position: absolute;
-  font-size: 14px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-  text-shadow: 0px 0px 7px var(--accent-color);
-} */
 
 .decorated-zone {
   position: relative;
@@ -97,9 +87,6 @@ h1 h2 h3 h4 h5 p {
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  /* justify-items: end; */
-  /* width: 70px; */
-  /* height: 98px; */
   gap: 10px;
 }
 
@@ -108,8 +95,6 @@ h1 h2 h3 h4 h5 p {
   width: 70px;
   height: 26px;
   align-self: center;
-  /* justify-self: stretch; */
-  /* padding-inline: 13px; */
   text-align: center;
 }
 
@@ -132,8 +117,22 @@ h1 h2 h3 h4 h5 p {
   border: none;
 }
 
-.header__theme-menu-item:focus-visible {
+.header__theme-menu-item:focus {
   border-bottom: 1px solid var(--accent-color);
+  outline: unset;
+}
+
+.header__theme-menu-item:active {
+  border: 1px solid var(--accent-color);
+  outline: unset;
+}
+.header__theme-menu-item:focus {
+  border-bottom: 1px solid var(--accent-color);
+  outline: unset;
+}
+
+.header__theme-menu-item:hover {
+  border: 1px solid var(--accent-color);
   outline: unset;
 }
 
@@ -212,6 +211,14 @@ h1 h2 h3 h4 h5 p {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.card-link_text:hover {
+  text-decoration: underline;
+}
+
+.card-link_text:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .card-title_text_background {
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -241,7 +248,7 @@ h1 h2 h3 h4 h5 p {
   display: flex;
   align-items: center;
   font-family: IBM Plex Mono;
-  margin: auto;
+  justify-content: center;
   height: 100vh;
   font-size: 120px;
   font-weight: 700;
