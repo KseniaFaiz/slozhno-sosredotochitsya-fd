@@ -8,7 +8,7 @@ h1 h2 h3 h4 h5 p {
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   display: grid;
-  background-color: #000028;
+  background-color: var(--page-text-color);
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
   background-attachment: fixed;
@@ -80,7 +80,7 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #db00ff;
+  color: var(--title-color-header-footer);
   text-shadow: 4px 4px 0px var(--accent-color);
 }
 
@@ -144,7 +144,7 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #000028;
+  color: var(var(--page-text-color));
   background-color: var(--accent-color);
 }
 
@@ -163,24 +163,49 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--accent-color);
+  color: var(--section-title-color);
 }
 
 .main {
-  display: grid;
-  align-items: center;
+  /* display: grid;
+  align-items: center; */
+  display: flex;
+  flex-direction: column;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   margin-block-start: 40px;
   gap: 50px;
 }
-.section {
+
+/* .card {
   display: grid;
+} */
+.card-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
-.card {
-  display: grid;
+.section-first {
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
+.section-second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+  .section-three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-three .card-title{
+margin-top: 0;
+  }
 
 .card-title {
   background-color: var(--accent-color);
@@ -191,8 +216,7 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .card-text {
@@ -203,7 +227,7 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #f1b2ce;
+  color: var(--card-text-color);
 }
 
 .card-link_text {
@@ -227,10 +251,9 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #000028;
+  color: var(--page-text-color);
   background-color: var(--accent-color);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .gallery {
@@ -256,7 +279,77 @@ h1 h2 h3 h4 h5 p {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #db00ff;
+  color: var(--title-color-header-footer);
   text-shadow: 2px 2px 0px var(--accent-color);
   margin-block-start: 40px;
+}
+
+@media (width >= 768px) {
+  .header .header_subtitle {
+    justify-self: end;
+    max-width: 50%;
+  }
+  .section-first {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 2fr;
+    column-gap: 20px; */
+    display: flex;
+    gap: 20px;
+  }
+
+  .section-second {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+  }
+
+  /* .section-second .card {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  } */
+
+  /* .section-title .card {
+    grid-column-start: 1;
+  } */
+
+  .section-second .section-title {
+    margin-block-end: 20px;
+  }
+
+  .section-three {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-family: IBM Plex Mono;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: 0%;
+    flex: 1;
+  }
+
+  .card-title {
+    margin-block-start: 0;
+    margin-block-end: 20px;
+  }
+/* 
+  .card:first-of-type .card-title_text_background {
+    margin-block-start: 0;
+  } */
+
+  .card-section {
+   display: flex;
+   flex-direction: column;
+   align-content: start;
+   padding-block-start:0 ;
+   flex: 2;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
