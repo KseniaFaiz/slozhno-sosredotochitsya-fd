@@ -264,26 +264,32 @@ h1 h2 h3 h4 h5 p {
 }
 
 .sunset {
-height: 100%;
-width: 100%;
 object-fit: cover;
-background-image: url(../images/sunset.png);
+    width: 100vw;
 }
 
 .ice-cream {
-  background-image: url(../images/ice-cream.png);
+  object-fit: cover;
+  width: 100vw;
+  /* background-image: url(../images/ice-cream.png); */
 }
 
 .tape {
-  background-image: url(../images/tape.png); 
+  object-fit: cover;
+    width: 100vw;
+  /* background-image: url(../images/tape.png);  */
 }
 
 .books {
-  background-image: url(../images/books.png);
+  object-fit: cover;
+    width: 100vw;
+  /* background-image: url(../images/books.png); */
 }
 
 .street {
-  background-image: url(../images/street.png);
+  object-fit: cover;
+    width: 100vw;
+  /* background-image: url(../images/street.png); */
 }
 
 .footer {
@@ -384,18 +390,23 @@ background-image: url(../images/sunset.png);
     grid-row: 1/2;
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
   .ice-cream {
     grid-column: 3/4;
     grid-row: 1/3;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 100%;
   }
   .tape {
     grid-column: 1/2;
     grid-row: 2/4;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 100%;
   }
 
   .books {
@@ -403,11 +414,13 @@ background-image: url(../images/sunset.png);
     grid-row: 2/3;
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
   .street {
     grid-column: 2/4;
     grid-row: 3/4;
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
 }
