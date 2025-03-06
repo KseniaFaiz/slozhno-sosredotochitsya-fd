@@ -20,6 +20,6 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: url(../images/cover-image-light.png);
 }
-.theme-light .header {
-  
-}
+.theme-light .rec {
+  display: none;
+ }
