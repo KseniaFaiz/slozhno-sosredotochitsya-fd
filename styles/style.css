@@ -117,15 +117,11 @@ h1 h2 h3 h4 h5 p {
   border: none;
 }
 
-.header__theme-menu-item:focus {
-  border-bottom: 1px solid var(--accent-color);
-  outline: unset;
-}
-
 .header__theme-menu-item:active {
   border: 1px solid var(--accent-color);
   outline: unset;
 }
+
 .header__theme-menu-item:focus {
   border-bottom: 1px solid var(--accent-color);
   outline: unset;
@@ -204,7 +200,7 @@ h1 h2 h3 h4 h5 p {
 }
 
 .section-three .card-title {
-  margin-top: 0;
+  margin-block-end: 0px;
 }
 
 .card-title {
@@ -264,31 +260,31 @@ h1 h2 h3 h4 h5 p {
 }
 
 .sunset {
-object-fit: cover;
-    width: 100vw;
+  width: 100%;
+  object-fit: cover;
 }
 
 .ice-cream {
+  width: 100%;
   object-fit: cover;
-  width: 100vw;
   /* background-image: url(../images/ice-cream.png); */
 }
 
 .tape {
+  width: 100%;
   object-fit: cover;
-    width: 100vw;
   /* background-image: url(../images/tape.png);  */
 }
 
 .books {
+  width: 100%;
   object-fit: cover;
-    width: 100vw;
   /* background-image: url(../images/books.png); */
 }
 
 .street {
+  width: 100%;
   object-fit: cover;
-    width: 100vw;
   /* background-image: url(../images/street.png); */
 }
 
@@ -314,11 +310,29 @@ object-fit: cover;
     justify-self: end;
     max-width: 50%;
     margin-inline-end: 10px;
+    padding-inline-end: 10px;
   }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+  .rec {
+    margin-block-start: 10px;
+    margin-inline-end: 20px;
+  }
+.header__theme-menu {
+  margin-inline-end: 10px;
+}
+.page-title {
+  margin-inline-start: -10px;
+}
+
   .section-first {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 2fr;
-    column-gap: 20px; */
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -383,6 +397,7 @@ object-fit: cover;
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
     height: 780px;
+    gap: 20px;
   }
 
   .sunset {
@@ -422,5 +437,9 @@ object-fit: cover;
     background-size: cover;
     background-position: center;
     width: 100%;
+  }
+
+  .decorated-zone {
+    margin-block-start: 60px;
   }
 }
