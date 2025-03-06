@@ -497,8 +497,8 @@ h1 h2 h3 h4 h5 p {
   }
 
   .section-second .card-section {
-    flex-direction: row;
-    flex: 1;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
   }
   .section-three {
     display: flex;
