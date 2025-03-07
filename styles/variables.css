@@ -5,6 +5,7 @@
   :root {
     --accent-color: #ff0070;
     --decor-zone-color: #ff0070;
+    --decor-zone-transparent-color: rgba(255, 0, 112, 0.4);
     --title-color-header-footer: #db00ff;
     --page-text-color: #000028;
     --card-text-color: #f1b2ce;
@@ -17,6 +18,7 @@
     :root {
       --accent-color: #ff0070;
       --decor-zone-color: #ff0070;
+      --decor-zone-transparent-color: rgba(255, 0, 112, 0.4);
       --title-color-header-footer: #db00ff;
       --page-text-color: #000028;
       --card-text-color: #f1b2ce;
@@ -30,6 +32,7 @@
     :root {
       --accent-color: #ff8dcb;
       --decor-zone-color:#353430;
+      --decor-zone-transparent-color: rgba(50, 49, 45, 0.4);
       --title-color-header-footer: #ffc2e6;
       --page-text-color: #353430;
       --card-text-color: #353430;
