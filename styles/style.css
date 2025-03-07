@@ -136,20 +136,22 @@ body {
   color: var(--accent-color);
   text-transform: lowercase;
   border: none;
+  color: var(--decor-zone-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-item:active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--decor-zone-color);
   outline: unset;
 }
 
 .header__theme-menu-item:focus {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--decor-zone-color);
   outline: unset;
 }
 
 .header__theme-menu-item:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid rgba(50, 49, 45, 0.4)
   outline: unset;
 }
 
