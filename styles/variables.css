@@ -2,11 +2,42 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root {
-  --accent-color: #ff0070;
-  --title-color-header-footer: #db00ff;
-  --page-text-color: #000028;
-  --card-text-color: #f1b2ce;
-  --section-title-color: #FF0070;
-}
+  :root {
+    --accent-color: #ff0070;
+    --decor-zone-color: #ff0070;
+    --title-color-header-footer: #db00ff;
+    --page-text-color: #000028;
+    --card-text-color: #f1b2ce;
+    --section-title-color: #ff0070;
+    --background-img-page: url(../images/cover-image-dark.png);
+  }
 
+/* Стили для темной темы */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent-color: #ff0070;
+      --decor-zone-color: #ff0070;
+      --title-color-header-footer: #db00ff;
+      --page-text-color: #000028;
+      --card-text-color: #f1b2ce;
+      --section-title-color: #ff0070;
+      --background-img-page: url(../images/cover-image-dark.png);
+    }
+  }
+  
+  /* Стили для светлой темы */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --accent-color: #ff8dcb;
+      --decor-zone-color:#353430;
+      --title-color-header-footer: #ffc2e6;
+      --page-text-color: #353430;
+      --card-text-color: #353430;
+      --section-title-color: #353430;
+      --background-img-page: url(../images/cover-image-light.png);
+    }
+  
+      .rec {
+      display: none;
+    }
+  }

@@ -10,16 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #FF8DCB;
+  --decor-zone-color:#353430;
   --title-color-header-footer: #FFC2E6;
   --page-text-color: #353430;
-  --card-text-color: #353430;
+  --card-text-color: #353430; 
   --section-title-color: #353430;
+  --background-img-page: url(../images/cover-image-light.png);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: url(../images/cover-image-light.png);
-}
 .theme-light .rec {
   display: none;
  }
