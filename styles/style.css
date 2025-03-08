@@ -307,6 +307,7 @@ body {
   .header-subtitle {
     width: 49%;
     justify-self: end;
+    margin-inline-end: 10px;
   }
 
   .page-title {
@@ -453,6 +454,7 @@ body {
   .header-subtitle {
     width: 49%;
     justify-self: end;
+    margin-inline-end: 10px;
   }
 
   .header__theme-menu-list {
@@ -471,7 +473,7 @@ body {
   .section {
     gap: 10px;
   }
-  
+
   .section-first {
     flex-direction: row;
   }
@@ -485,6 +487,7 @@ body {
   .section-second {
     display: grid;
     grid-template-rows: 1fr auto;
+    gap: 20px;
   }
 
   .section-second .section-title {
