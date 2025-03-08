@@ -131,7 +131,7 @@ body {
   padding-block: 4px;
 }
 
-.header__theme-menu-button:active {
+.header__theme-menu-item:active {
   outline: 1px solid var(--decor-zone-color);
 }
 
@@ -305,7 +305,7 @@ body {
   }
 
   .header-subtitle {
-    max-width: 49%;
+    width: 49%;
     justify-self: end;
   }
 
@@ -451,10 +451,10 @@ body {
   }
 
   .header-subtitle {
-    max-width: 49%;
+    width: 49%;
     justify-self: end;
   }
-  
+
   .header__theme-menu-list {
     flex-direction: row;
   }
@@ -468,6 +468,10 @@ body {
     margin-inline-start: -10px;
   }
 
+  .section {
+    gap: 10px;
+  }
+  
   .section-first {
     flex-direction: row;
   }
