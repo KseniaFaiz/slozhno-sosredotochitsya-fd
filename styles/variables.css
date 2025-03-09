@@ -40,7 +40,9 @@
       --background-img-page: url(../images/cover-image-light.png);
     }
   
-      .rec {
+    .rec {
       display: none;
     }
   }
+
+  

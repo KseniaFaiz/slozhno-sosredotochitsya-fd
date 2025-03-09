@@ -9,15 +9,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #ff8dcb;
-  --decor-zone-color: #353430;
-  --title-color-header-footer: #ffc2e6;
-  --page-text-color: #353430;
-  --card-text-color: #353430;
-  --section-title-color: #353430;
-  --background-img-page: url(../images/cover-image-light.png);
+    --accent-color: #ff8dcb;
+    --decor-zone-color:#353430;
+    --decor-zone-transparent-color: rgba(50, 49, 45, 0.4);
+    --title-color-header-footer: #ffc2e6;
+    --page-text-color: #353430;
+    --card-text-color: #353430;
+    --section-title-color: #353430;
+    --background-img-page: url(../images/cover-image-light.png);
 }
 
-.theme-light .rec {
+  .theme-light .rec {
   display: none;
 }
