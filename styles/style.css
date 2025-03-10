@@ -40,7 +40,7 @@ body {
 
 .rec {
   position: absolute;
-  display: flex;
+  display: var(--rec-display);
   justify-self: right;
   align-self: start;
   inset-inline-end: 10px;
@@ -137,17 +137,18 @@ body {
   color: var(--decor-zone-color);
   cursor: pointer;
   padding-block: 4px;
+  width: 100%;
 }
 
-.header__theme-menu-item:active {
+.header__theme-menu-button:active {
   outline: 1px solid var(--decor-zone-color);
 }
 
-.header__theme-menu-item:focus {
+.header__theme-menu-button:focus {
   border-bottom: 1px solid var(--decor-zone-color);
 }
 
-.header__theme-menu-item:hover {
+.header__theme-menu-button:hover {
   outline: 1px solid var(--decor-zone-transparent-color);
 }
 
@@ -255,9 +256,9 @@ body {
   justify-content: center;
   height: 100vh;
   min-height: 668px;
-  font-size: 120px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
-  line-height: 99px;
+  line-height: 95.7px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;

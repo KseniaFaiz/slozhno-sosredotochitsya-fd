@@ -12,6 +12,7 @@
     --section-title-color: #ff0070;
     --background-img-page: url(../images/cover-image-dark.png);
     --background-color-page:#000028;
+    --rec-display: flex;
   }
 
 /* Стили для темной темы */
@@ -26,6 +27,7 @@
       --section-title-color: #ff0070;
       --background-img-page: url(../images/cover-image-dark.png);
       --background-color-page: #000028;
+      --rec-display: flex;
     }
   }
   
@@ -41,10 +43,7 @@
       --section-title-color: #353430;
       --background-img-page: url(../images/cover-image-light.png);
       --background-color-page: rgba(255, 241, 247, 1);
-    }
-  
-    .rec {
-      display: none;
+      --rec-display: none;
     }
   }
 
