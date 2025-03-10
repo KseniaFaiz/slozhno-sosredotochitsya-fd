@@ -140,7 +140,7 @@ body {
   width: 100%;
 }
 
-.header__theme-menu-button:active {
+.header__theme-menu-button_active {
   outline: 1px solid var(--decor-zone-color);
 }
 
@@ -150,6 +150,10 @@ body {
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--decor-zone-transparent-color);
+}
+
+.header__theme-menu-button:active {
+  outline: 1px solid var(--decor-zone-color);
 }
 
 .header-subtitle {
@@ -252,7 +256,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   justify-content: center;
   height: 100vh;
   min-height: 668px;
@@ -299,17 +303,6 @@ body {
     inset: 0;
   }
 
-  /* .rec::after {
-    content: "";
-    display: inline-block;
-    width: 9px; 
-    height: 9px; 
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px 2px rgba(255, 0, 112, 1);
-    margin-inline-end: 0;
-  }  */
-
   .header__theme-menu {
     margin-inline-end: 10px;
   }
@@ -344,7 +337,8 @@ body {
 
   .section-title {
     grid-column-start: 1;
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", monospace;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
@@ -441,22 +435,6 @@ body {
     z-index: -1;
   }
 
-  /* .rec-container {
-    inset: 10px 30px;
-    z-index: -1;
-  }
-
-  .rec::after {
-    content: "";
-    display: inline-block;
-    width: 9px; /
-    height: 9px; 
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px 2px rgba(255, 0, 112, 1);
-    margin-inline-end: 0;
-  } */
-
   .header__theme-menu {
     justify-content: center;
     grid-row: 1 / 2;
@@ -475,7 +453,7 @@ body {
   }
 
   .page-title {
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 129.53px;
@@ -520,7 +498,7 @@ body {
 
   .section-title {
     grid-column-start: 1;
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
@@ -588,7 +566,7 @@ body {
   }
 
   .footer-title {
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     font-size: 157px;
     line-height: 83%;

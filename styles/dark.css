@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     --accent-color: #ff0070;
-    --decor-zone-color: #ff0070;
+    --decor-zone-color: rgba(255, 0, 112, 1);
     --decor-zone-transparent-color: rgba(255, 0, 112, 0.4);
     --title-color-header-footer: #db00ff;
     --page-text-color: #000028;
