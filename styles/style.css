@@ -8,7 +8,7 @@ body {
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   display: grid;
-  background-color: var(--page-text-color);
+  background-color: var(--background-color-page);
   background-image: var(--background-img-page);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -41,9 +41,11 @@ body {
 .rec {
   position: absolute;
   display: flex;
-  justify-content: right;
+  justify-self: right;
   align-self: start;
-  inset: 10px;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  width: fit-content;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -435,6 +437,7 @@ body {
     margin-block-start: 20px;
     margin-inline-end: 20px;
     inset: 0;
+    z-index: -1;
   }
 
   /* .rec-container {

@@ -11,6 +11,7 @@
     --card-text-color: #f1b2ce;
     --section-title-color: #ff0070;
     --background-img-page: url(../images/cover-image-dark.png);
+    --background-color-page:#000028;
   }
 
 /* Стили для темной темы */
@@ -24,6 +25,7 @@
       --card-text-color: #f1b2ce;
       --section-title-color: #ff0070;
       --background-img-page: url(../images/cover-image-dark.png);
+      --background-color-page: #000028;
     }
   }
   
@@ -38,6 +40,7 @@
       --card-text-color: #353430;
       --section-title-color: #353430;
       --background-img-page: url(../images/cover-image-light.png);
+      --background-color-page: rgba(255, 241, 247, 1);
     }
   
     .rec {
