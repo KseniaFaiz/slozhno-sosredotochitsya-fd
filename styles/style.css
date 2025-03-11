@@ -98,11 +98,11 @@ body {
 .page-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
-  line-height: 95.7px;
+  line-height: 83%;
   text-align: left;
   text-decoration-skip-ink: none;
   color: var(--title-color-header-footer);
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px var(--title-color-shadow-header);
 }
 
 .header__theme-menu-list {
@@ -269,7 +269,7 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--title-color-header-footer);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--title-color-shadow-footer);
 }
 
 @media (768px <= width < 1024px) {
@@ -398,7 +398,6 @@ body {
   }
 
   .footer {
-    margin-block-start: 60px;
     min-height: 1024px;
   }
 }

@@ -10,9 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff8dcb;
-  --decor-zone-color:#353430;
+  --decor-zone-color: #353430;
   --decor-zone-transparent-color: rgba(50, 49, 45, 0.4);
-  --title-color-header-footer: #ffc2e6;
+  --title-color-header-footer: rgba(255, 194, 230, 1);
+  --title-color-shadow-header: rgba(255, 141, 203, 1);
+  --title-color-shadow-footer: rgba(255, 0, 112, 1);
   --page-text-color: #353430;
   --card-text-color: #353430;
   --section-title-color: #353430;
