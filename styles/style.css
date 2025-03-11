@@ -282,12 +282,6 @@ body {
     padding: 20px;
   }
 
-  .header .header_subtitle {
-    justify-self: end;
-    max-width: 50%;
-    padding-inline-end: 10px;
-  }
-
   .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 20px;
@@ -411,13 +405,6 @@ body {
     padding: 20px;
   }
 
-  /* .header .header_subtitle {
-    justify-self: end;
-    max-width: 50%;
-    padding-inline-end: 10px;
-  } */
-
-
   .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 20px;
@@ -428,12 +415,12 @@ body {
     inset-inline-end: 20px;
   }
 
-  /* .rec {
+  .rec {
     margin-block-start: 20px;
     margin-inline-end: 20px;
     inset: 0;
     z-index: -1;
-  } */
+  }
 
   .header__theme-menu {
     justify-content: center;
@@ -460,13 +447,13 @@ body {
     margin-inline-start: -20px;
   }
 
-  /* .section {
+  .section {
     gap: 10px;
   }
 
   .section-why {
     flex-direction: row;
-  } */
+  }
 
   .main {
     padding-inline: 20px;
@@ -480,13 +467,13 @@ body {
     gap: 20px;
   }
 
-  /* .card-section {
+  .card-section {
     display: flex;
     flex-direction: column;
     align-content: start;
     padding-block-start: 0;
     flex: 2;
-  } */
+  }
 
   .section-concentration .card-section {
     display: grid;
@@ -499,10 +486,10 @@ body {
     grid-row: 1/2;
   }
 
-  /* .section-advices {
+  .section-advices {
     flex-direction: row;
-  } */
-/* 
+  }
+
   .section-title {
     grid-column-start: 1;
     font-family: "IBM Plex Mono", monospace;
@@ -515,7 +502,7 @@ body {
 
   .card-title {
     margin-block-end: 20px;
-  } */
+  }
 
   .gallery {
     display: grid;
