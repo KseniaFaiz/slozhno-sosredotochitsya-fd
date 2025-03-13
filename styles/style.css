@@ -370,6 +370,14 @@ body {
   .footer {
     min-height: 1024px;
   }
+  
+  .footer-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-size: 157px;
+    line-height: 83%;
+    letter-spacing: 0%;
+  }
 }
 
 @media (width>=1024px) {
