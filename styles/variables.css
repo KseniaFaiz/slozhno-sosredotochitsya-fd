@@ -18,37 +18,33 @@
 }
 
 /* Стили для темной темы */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --decor-zone-color: rgba(255, 0, 112, 1);
-    --decor-zone-transparent-color: rgba(255, 0, 112, 0.4);
-    --title-color-header-footer: #db00ff;
-    --title-color-shadow-header: rgba(255, 0, 112, 1);
-    --title-color-shadow-footer: rgba(255, 0, 112, 1);
-    --page-text-color: #000028;
-    --card-text-color: #f1b2ce;
-    --section-title-color: #ff0070;
-    --background-img-page: url(../images/cover-image-dark.png);
-    --background-color-page: #000028;
-    --rec-display: flex;
+:root.theme-dark {
+  --accent-color: #ff0070;
+  --decor-zone-color: rgba(255, 0, 112, 1);
+  --decor-zone-transparent-color: rgba(255, 0, 112, 0.4);
+  --title-color-header-footer: #db00ff;
+  --title-color-shadow-header: rgba(255, 0, 112, 1);
+  --title-color-shadow-footer: rgba(255, 0, 112, 1);
+  --page-text-color: #000028;
+  --card-text-color: #f1b2ce;
+  --section-title-color: #ff0070;
+  --background-img-page: url(../images/cover-image-dark.png);
+  --background-color-page: #000028;
+  --rec-display: flex;
   }
-}
 
 /* Стили для светлой темы */
-@media (prefers-color-scheme: light) {
-  :root {
-    --accent-color: #ff8dcb;
-    --decor-zone-color: #353430;
-    --decor-zone-transparent-color: rgba(50, 49, 45, 0.4);
-    --title-color-header-footer: rgba(255, 194, 230, 1);
-    --title-color-shadow-header: rgba(255, 141, 203, 1);
-    --title-color-shadow-footer: rgba(255, 0, 112, 1);
-    --page-text-color: #353430;
-    --card-text-color: #353430;
-    --section-title-color: #353430;
-    --background-img-page: url(../images/cover-image-light.png);
-    --background-color-page: rgba(255, 241, 247, 1);
-    --rec-display: none;
-  }
+:root.theme-light {
+  --accent-color: #ff8dcb;
+  --decor-zone-color: #353430;
+  --decor-zone-transparent-color: rgba(50, 49, 45, 0.4);
+  --title-color-header-footer: rgba(255, 194, 230, 1);
+  --title-color-shadow-header: rgba(255, 141, 203, 1);
+  --title-color-shadow-footer: rgba(255, 0, 112, 1);
+  --page-text-color: #353430;
+  --card-text-color: #353430;
+  --section-title-color: #353430;
+  --background-img-page: url(../images/cover-image-light.png);
+  --background-color-page: rgba(255, 241, 247, 1);
+  --rec-display: none;
 }

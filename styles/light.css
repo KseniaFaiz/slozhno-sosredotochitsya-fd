@@ -22,3 +22,20 @@
   --background-color-page: rgba(255, 241, 247, 1);
   --rec-display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --decor-zone-color: #353430;
+    --decor-zone-transparent-color: rgba(50, 49, 45, 0.4);
+    --title-color-header-footer: rgba(255, 194, 230, 1);
+    --title-color-shadow-header: rgba(255, 141, 203, 1);
+    --title-color-shadow-footer: rgba(255, 0, 112, 1);
+    --page-text-color: #353430;
+    --card-text-color: #353430;
+    --section-title-color: #353430;
+    --background-img-page: url(../images/cover-image-light.png);
+    --background-color-page: rgba(255, 241, 247, 1);
+    --rec-display: none;
+  }
+}
