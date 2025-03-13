@@ -37,7 +37,7 @@ body {
   inset-block-start: 10px;
   width: fit-content;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 25px;
   text-align: center;
   text-underline-position: from-font;
@@ -87,7 +87,7 @@ body {
 
 .page-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-weight: 700;
+  font-weight: bold;
   line-height: 83%;
   text-align: left;
   text-decoration-skip-ink: none;
@@ -116,7 +116,7 @@ body {
 .header__theme-menu-button {
   font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 18px;
   text-align: center;
   text-underline-position: from-font;
@@ -161,7 +161,7 @@ body {
 .text_section_font {
   font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 23.4px;
   text-align: left;
   text-underline-position: from-font;
@@ -216,7 +216,7 @@ body {
 .text_card_font {
   font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 23.4px;
   text-align: left;
   text-underline-position: from-font;
@@ -251,7 +251,7 @@ body {
   height: 100vh;
   min-height: 668px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-weight: 700;
+  font-weight: bold;
   line-height: 95.7px;
   text-align: left;
   text-underline-position: from-font;
@@ -314,7 +314,7 @@ body {
   .section-title {
     grid-column-start: 1;
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 23.4px;
     letter-spacing: 0%;
@@ -369,7 +369,6 @@ body {
 
   .footer {
     min-height: 1024px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -411,5 +410,6 @@ body {
 
   .footer {
     min-height: 768px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
