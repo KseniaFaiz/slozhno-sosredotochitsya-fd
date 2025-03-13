@@ -217,7 +217,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
   font-weight: normal;
-  line-height: 23px;
+  line-height: 23.4px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -316,7 +316,7 @@ body {
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 23.4px;
     letter-spacing: 0%;
     flex: 1;
   }
